@@ -8,7 +8,7 @@ upcoming cool features and updateds.*
 
 Arthur
 ---
-@ElmahdiMahmoud
+* twitter.com/ElmahdiMahmoud
 
 Demo
 ---
