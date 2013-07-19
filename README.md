@@ -151,5 +151,5 @@ Methods
 
 Arthur
 ---
-** Emahdi Mahmoud **
+**Emahdi Mahmoud**
 * https://twitter.com/ElmahdiMahmoud
