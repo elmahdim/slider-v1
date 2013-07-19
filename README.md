@@ -6,10 +6,6 @@ upcoming cool features and updateds.*
 
 ---
 
-Arthur
----
-* https://twitter.com/ElmahdiMahmoud
-
 Demo
 ---
 * http://codepen.io/ElmahdiMahmoud/full/dKxib ,
@@ -152,3 +148,8 @@ Methods
         'speed': 1000
    });
 ```
+
+Arthur
+---
+** Emahdi Mahmoud **
+* https://twitter.com/ElmahdiMahmoud
