@@ -1,0 +1,193 @@
+ /*! 
+ *  Written for     : jQuery Slider plugin version 1
+ *  Author          : @ElmahdiMahmoud
+ *  Updated         : 19.07.2013
+ *  Further changes : @ElmahdiMahmoud
+ */
+
+/* Global ===================== */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section { display: block; }
+audio,
+canvas,
+video   { display: inline-block; *display: inline;  *zoom: 1; }
+audio:not([controls]) { display: none; }
+html 					{ font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+input::-moz-focus-inner { border: 0; }
+a img,
+button,
+input[type="submit"] 	{ border: 0; }
+a:active,
+a:focus,
+a:hover,
+a:active,
+*:focus 				{ outline:none; }
+* 						{ _noFocusLine: expression(this.hideFocus=true); }
+img 					{ max-width: 100%; height: auto; }
+@media \0screen 		{ img { width: auto; } }
+.clearfix:before,
+.clearfix:after { display: table; line-height: 0; content: ""; }
+.clearfix:after { clear: both; }
+.clear          { visibility: hidden; display: block !important; font-size: 0; content: " "; clear: both; height: 0; }
+img 			{ width: auto\9; height: auto; max-width: 100%; vertical-align: middle; border: 0; -ms-interpolation-mode: bicubic; }
+
+body {
+  color: #333;
+  font: normal 14px/1.5 Monaco, Consolas, "Lucida Console", monospace; 
+  margin: 0;
+}
+
+/* Blocks ===================== */
+#wrapper { width: 800px; margin: 0 auto; overflow: hidden }
+/* Links & type =============== */
+a { color: #d33682; text-decoration: none; }
+a:hover,
+a:focus { color: #d33682; text-decoration: none; }
+a {
+     -webkit-transition: all 600ms ease-in-out;
+        -moz-transition: all 600ms ease-in-out;
+          -o-transition: all 600ms ease-in-out;
+             transition: all 600ms ease-in-out;
+}
+a:hover {
+     -webkit-transition: all 600ms ease-in-out;
+        -moz-transition: all 600ms ease-in-out;
+          -o-transition: all 600ms ease-in-out;
+             transition: all 600ms ease-in-out;
+}
+
+/* Lists ====================== */
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+li { line-height: 20px; }
+/* Miscellaneous ============== */
+::-moz-selection { background: #d33682; color: #fff; text-shadow: none; }
+::selection 	 { background: #d33682; color: #fff; text-shadow: none; }
+* 				 { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+small 	{ font-size: 11px; }
+strong  { font-weight: bold;  }
+em 		{ font-style: italic; }
+cite 	{ font-style: normal; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+.text-left   { text-align: left; }
+.text-green  { color: #A6E22E; }
+.text-lred   { color: #DD1144; }
+.text-lblue  { color: #66D9EF; }
+.bg-grey     { background-color: rgb(238, 238, 238); }
+h1 { color: #2aa198 }
+h2 { font-weight: normal; margin: 0 0 7px 0; padding: 0; line-height: 100%; color: #268bd2 }
+h3 { margin: 0 0 7px 0; padding: 0; line-height: 100%; font-size: 16px; }
+h3 * { font-weight: normal }
+p  { margin: 0; padding: 0; color: #657b83; }
+.pull-left  { float: left }
+.pull-right { float: right }
+hr {
+	background-color: #ccc;
+	margin: 20px 0;
+	height: 1px;
+	border: 0;
+}
+code,
+pre {
+	background-color: #272822;
+	color: #FEFAF7/* #dabf8c */;
+	font: normal 12px/1.5 Consolas, monaco, monospace;
+    padding: 9.5px;
+	margin: 5px 0 20px 0;
+	display: block;
+}
+pre > code { padding: 0; margin: 0 }
+pre {
+    display: block;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/*
+	====================
+	START COPY AND PASTE
+	====================
+*/
+
+/* Slider =================== */
+[id*="slider-"] {
+    width: 800px;
+    overflow: hidden;
+    margin: 10px auto 30px auto;
+	position: relative
+}
+[id*="slider-"] ul {
+    list-style: none;
+    height: 400px;
+	margin: 0; /* do not change */
+}
+[id*="slider-"] li {
+    float: left;
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+.caption {
+    background-color: #fdf6e3;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+	opacity: .4;
+    width: 100%;
+    padding: 10px;
+	 -webkit-transition: all 600ms ease-in-out;
+		-moz-transition: all 600ms ease-in-out;
+		  -o-transition: all 600ms ease-in-out;
+			 transition: all 600ms ease-in-out;
+}
+[id*="slider-"]:hover .caption { bottom: 0; opacity: .7; }
+[id*="slider-"] button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+	cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+	position: absolute;
+	height: 100%;
+	top: 0;
+} 
+[id*="slider-"] button img {
+	opacity: .5;
+	position: relative;
+    -webkit-transition: all 600ms ease-in-out;
+        -moz-transition: all 600ms ease-in-out;
+          -o-transition: all 600ms ease-in-out;
+            transition: all 600ms ease-in-out;
+}
+[id*="slider-"] button.prev img { left: -50px; }
+[id*="slider-"] button.next img { right:-50px; }
+[id*="slider-"] button.prev,
+[id*="slider-"]:hover button.prev img { left: 0; }
+[id*="slider-"] button.next,
+[id*="slider-"]:hover button.next img { right:0; }
