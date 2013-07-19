@@ -6,6 +6,10 @@ upcoming cool features and updateds.*
 
 ---
 
+Arthur
+---
+@ElmahdiMahmoud
+
 Demo
 ---
 * http://codepen.io/ElmahdiMahmoud/full/dKxib ,
@@ -129,4 +133,22 @@ Slider control buttons CSS
 [id*="slider-"]:hover button.prev img { left: 0; }
 [id*="slider-"] button.next,
 [id*="slider-"]:hover button.next img { right:0; }
+```
+
+Options
+---
+* `speed (default: 800)` The time interval in milliseconds within which the
+  slide animation will complete
+
+
+Methods
+---
+```javascript
+   //fire with default usage
+   $("#slider-1").slider();
+   
+   //fire with default Speed option
+   $("#slider-1").slider({
+        'speed': 1000
+   });
 ```
