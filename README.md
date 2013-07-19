@@ -1,13 +1,15 @@
 Slider-v1, a jQuery slider plugin
 ===
 
-Slider-v1 is a light-weight images/content slider plugin. slider-v1 is the first basic step for a 
-upcoming cool features and updateds.
+*Slider-v1 is a light-weight images/content slider plugin. slider-v1 is the first basic step for a 
+upcoming cool features and updateds.*
+
+---
 
 Demo
 ---
-http://codepen.io/ElmahdiMahmoud/full/dKxib ,
-http://codepen.io/ElmahdiMahmoud/details/dKxib
+* http://codepen.io/ElmahdiMahmoud/full/dKxib ,
+* http://codepen.io/ElmahdiMahmoud/details/dKxib
 
 Browser compatibility
 ---
