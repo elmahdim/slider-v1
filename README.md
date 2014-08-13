@@ -6,10 +6,8 @@ upcoming cool features and updateds.*
 
 ---
 
-Demo
+[Demo](http://codepen.io/ElmahdiMahmoud/details/dKxib)
 ---
-* http://codepen.io/ElmahdiMahmoud/full/dKxib ,
-* http://codepen.io/ElmahdiMahmoud/details/dKxib
 
 Browser compatibility
 ---
@@ -149,7 +147,5 @@ Methods
    });
 ```
 
-Arthur
----
-**Emahdi Mahmoud**
-* https://twitter.com/ElmahdiMahmoud
+
+* [@ElmahdiMahmoud](https://twitter.com/ElmahdiMahmoud)
